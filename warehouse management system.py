@@ -1,9 +1,9 @@
-class Product:
+class Product:  #Defining product parameters
     def __init__(self,name,price,quantity):
         self.name=name
         self.price=float(price)
         self.quantity=int(quantity)
-class Warehouse:
+class Warehouse:    #Defining warehouse functions
     def __init__(self):
         self.products=[]
     def add_product(self,product):
@@ -27,7 +27,7 @@ class Warehouse:
     def list_products(self):
         for product in self.products:
             print(f"{product.name} - {product.quantity} units - ${product.price}")
-warehouse=Warehouse()
+warehouse=Warehouse()   #Code to understand user input
 while True:
     print("\n-- Warehouse Management System ---")
     print("1. Add Product")
